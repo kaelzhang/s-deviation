@@ -15,19 +15,33 @@
 
 # s-deviation
 
-<!-- description -->
+Math utility to calculate [standard deviations](https://en.wikipedia.org/wiki/Standard_deviation), especially for fintech.
 
 ## Install
 
 ```sh
-$ npm install s-deviation --save
+$ npm install s-deviation
 ```
 
 ## Usage
 
 ```js
-const s_deviation = require('s-deviation')
+import sd from 's-deviation'
+
+sd([1, 2, 4, 8], 2)         // [0.25, 1, 4]
+sd([1, 2, 3, 4, 5, 6], 4)   // [1.25, 1.25, 1.25]
 ```
+
+## sd(datum, size)
+
+- **datum** `Array.<Number>` the collection of data
+- **size** `Number` the sample size of
+
+Returns `Array.<Number>` the array of standard deviations.
+
+## Related Modules
+
+- [moving-averages](https://www.npmjs.com/package/moving-averages): The complete collection of utility methods for [Moving average](https://en.wikipedia.org/wiki/Moving_average)
 
 ## License
 

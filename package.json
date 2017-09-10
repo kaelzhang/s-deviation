@@ -1,7 +1,7 @@
 {
   "name": "s-deviation",
-  "version": "1.0.0",
-  "description": "s-deviation",
+  "version": "1.0.1",
+  "description": "Math utility to calculate standard deviations.",
   "main": "lib/index.js",
   "module": "src/index.js",
   "scripts": {
@@ -18,7 +18,12 @@
     "url": "git://github.com/kaelzhang/s-deviation.git"
   },
   "keywords": [
-    "s-deviation"
+    "s-deviation",
+    "standard-deviation",
+    "deviation",
+    "fintech",
+    "financial-technology",
+    "match"
   ],
   "engines": {
     "node": ">=4"
@@ -56,6 +61,7 @@
     "rollup-plugin-node-resolve": "^3.0.0"
   },
   "dependencies": {
-    "babel-runtime": "^6.23.0"
+    "babel-runtime": "^6.23.0",
+    "moving-averages": "^3.0.6"
   }
 }
