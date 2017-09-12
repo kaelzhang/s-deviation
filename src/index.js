@@ -1,23 +1,27 @@
 import {
-  simple
+  ma
 } from 'moving-averages'
 
 
-const one = (avg, offset, datum, size) => {
-  let i = 0
-  let sum = 0
+export default (data, size) => {
+  const length = data.length
+  const avg = ma(data, size)
+  const ret = []
 
-  while (i < size) {
-    sum += Math.pow(datum[offset + i++] - avg, 2)
+  let i = size - 1
+  let j
+  let sum
+
+  for (; i < length; i ++) {
+    sum = 0
+    j = i - size + 1
+
+    for (; j <= i; j ++) {
+      sum += Math.pow(data[j] - avg[i], 2)
+    }
+
+    ret[i] = Math.sqrt(sum / size)
   }
 
-  return sum / size
-}
-
-
-export default (datum, size) => {
-  const result = []
-  const ma = simple.periods(datum, size)
-
-  return ma.map((avg, offset) => one(avg, offset, datum, size))
+  return ret
 }
