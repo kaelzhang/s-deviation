@@ -48,7 +48,9 @@ Returns `Array.<Number>` the array of standard deviations.
 
 ## Related Modules
 
-- [moving-averages](https://www.npmjs.com/package/moving-averages): The complete collection of utility methods for [Moving average](https://en.wikipedia.org/wiki/Moving_average)
+- [bollinger-bands](https://www.npmjs.com/package/bollinger-bands): Fintach math utility to calculate bollinger bands.
+- [s-deviation](https://www.npmjs.com/package/s-deviation): Math utility to calculate standard deviations.
+- [moving-averages](https://www.npmjs.com/package/moving-averages): The complete collection of utility methods for [Moving average](https://en.wikipedia.org/wiki/Moving_average).
 
 ## License
 
