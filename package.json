@@ -1,6 +1,6 @@
 {
   "name": "s-deviation",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Math utility to calculate standard deviations.",
   "main": "lib/index.js",
   "module": "src/index.js",
@@ -11,7 +11,8 @@
     "report-cov": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "files": [
-    "lib/"
+    "lib/",
+    "src/"
   ],
   "repository": {
     "type": "git",
