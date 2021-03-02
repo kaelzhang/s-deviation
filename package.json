@@ -1,6 +1,6 @@
 {
   "name": "s-deviation",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Math utility to calculate standard deviations.",
   "main": "lib/index.js",
   "module": "src/index.js",
